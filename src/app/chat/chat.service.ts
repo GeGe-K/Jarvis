@@ -11,4 +11,8 @@ export class ChatService {
 
   constructor() { }
 
+  talk() {
+    this.client.textRequest('Who are you?')
+      .then (res => console.log(res));
+  }
 }
